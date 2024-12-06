@@ -34,6 +34,8 @@ Navigate to the frontend directory and install the dependencies:
 4. You can toggle the temperature unit between Celsius and Fahrenheit using the provided button.
 5. Click "Back to Search" to perform a new search.
 
+![Screenshot 2024-12-06 at 5 15 55 PM](https://github.com/user-attachments/assets/381b8619-307b-47de-9d6e-f2f3bc5890d0)
+
 **Project Structure**
 weather-app/
 ├── backend/
