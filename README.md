@@ -36,26 +36,5 @@ Navigate to the frontend directory and install the dependencies:
 
 ![Screenshot 2024-12-06 at 5 15 55 PM](https://github.com/user-attachments/assets/381b8619-307b-47de-9d6e-f2f3bc5890d0)
 
-**Project Structure**
-weather-app/
-├── backend/
-│   ├── index.js
-│   ├── package.json
-│   
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Form.jsx
-│   │   │   └── WeatherData.jsx
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   ├── package.json
-│   └── .env (Add your own .env file here)
-|── package.json
-|── package-lock.json
-└── README.md
-
 **Contact**
 For any questions or feedback, please contact ponswarnalaya.r@gmail.com.
