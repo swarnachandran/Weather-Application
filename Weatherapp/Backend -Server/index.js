@@ -19,13 +19,16 @@ app.post('/', async (req,res) => {
     const {cityname} = req.body
     // console.log(req.body.cityname)
 
-if (cityname.length <= 2){
-    return(res.status(400).json({message: 'City name provided is incorrect!'}))
-    alert('no!')
-}
-else{
-    const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${process.env.api_key}&units=metric`)
-    res.send(weather.data)
-    console.log(weather.data)
-}
+if (cityname.length <= 2) {
+        return res.status(400).json({ message: 'City name provided is incorrect!' });
+    }
+
+    try {
+        const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${process.env.api_key}&units=metric`);
+        res.send(weather.data);
+        console.log(weather.data);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Error fetching weather data' });
+    }
 })
